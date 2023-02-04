@@ -55,9 +55,9 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="GridContainerCreditos" type="GridContainer" parent="CenterContainer"]
-margin_left = 332.0
+margin_left = 317.0
 margin_top = 23.0
-margin_right = 948.0
+margin_right = 962.0
 margin_bottom = 427.0
 size_flags_horizontal = 2
 size_flags_vertical = 2
@@ -76,16 +76,16 @@ texture = ExtResource( 2 )
 
 [node name="lblAlias" type="Label" parent="CenterContainer/GridContainerCreditos"]
 margin_left = 164.0
-margin_right = 291.0
+margin_right = 337.0
 margin_bottom = 42.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "Elenoide"
+text = "ElenoideArt"
 
 [node name="lblRoll" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
-margin_right = 512.0
+margin_left = 446.0
+margin_right = 541.0
 margin_bottom = 42.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -111,9 +111,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Rafatronic"
 
 [node name="lblRoll2" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
+margin_left = 446.0
 margin_top = 68.0
-margin_right = 616.0
+margin_right = 645.0
 margin_bottom = 110.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -131,17 +131,17 @@ texture = ExtResource( 2 )
 [node name="lblAlias3" type="Label" parent="CenterContainer/GridContainerCreditos"]
 margin_left = 164.0
 margin_top = 136.0
-margin_right = 269.0
+margin_right = 346.0
 margin_bottom = 178.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "JuanJo"
+text = "DjuangoDev"
 
 [node name="lblRoll3" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
+margin_left = 446.0
 margin_top = 136.0
-margin_right = 616.0
+margin_right = 645.0
 margin_bottom = 178.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -167,9 +167,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Alberto"
 
 [node name="lblRoll4" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
+margin_left = 446.0
 margin_top = 204.0
-margin_right = 522.0
+margin_right = 551.0
 margin_bottom = 246.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -187,17 +187,17 @@ texture = ExtResource( 2 )
 [node name="lblAlias5" type="Label" parent="CenterContainer/GridContainerCreditos"]
 margin_left = 164.0
 margin_top = 272.0
-margin_right = 252.0
+margin_right = 335.0
 margin_bottom = 314.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "Victor"
+text = "VictorSeven"
 
 [node name="lblRoll5" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
+margin_left = 446.0
 margin_top = 272.0
-margin_right = 522.0
+margin_right = 551.0
 margin_bottom = 314.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
@@ -223,9 +223,9 @@ custom_fonts/font = SubResource( 2 )
 text = "Cybermito"
 
 [node name="lblRoll6" type="Label" parent="CenterContainer/GridContainerCreditos"]
-margin_left = 417.0
+margin_left = 446.0
 margin_top = 340.0
-margin_right = 616.0
+margin_right = 645.0
 margin_bottom = 382.0
 size_flags_horizontal = 2
 size_flags_vertical = 0
