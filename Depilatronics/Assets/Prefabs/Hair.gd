@@ -1,9 +1,6 @@
 extends Area2D
+class_name Hair
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
 signal tip_touched(object)
 
@@ -34,8 +31,8 @@ func _process(delta):
 	if falling:
 		position.y=position.y+delta*velocity	
 
-func _on_Hair_mouse_entered():
-	fall()
+#func _on_Hair_mouse_entered():
+#	fall()
 
 func fall():
 	falling=true

@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Hair",
+"language": "GDScript",
+"path": "res://Assets/Prefabs/Hair.gd"
+} ]
+_global_script_class_icons={
+"Hair": ""
+}
+
 [application]
 
 config/name="Depilatronics"
@@ -23,6 +33,14 @@ window/size/height=720
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+pinchar={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [physics]
 

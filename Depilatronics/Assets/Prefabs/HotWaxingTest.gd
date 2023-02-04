@@ -1,6 +1,10 @@
 extends Node2D
 
 
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
 var Wax=preload("res://Assets/Prefabs/HotWax.tscn")
 var current_wax=null
 
