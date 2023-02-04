@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/GenericButton.tscn" type="PackedScene" id=1]
+
+[node name="Buttons" type="VBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="hot_wax" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 84.0
+margin_bottom = 83.0
+
+[node name="cold_wax" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 87.0
+margin_right = 84.0
+margin_bottom = 170.0
+
+[node name="tweezers" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 174.0
+margin_right = 84.0
+margin_bottom = 257.0
+
+[node name="pull" parent="." instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 261.0
+margin_right = 84.0
+margin_bottom = 344.0
+
+[editable path="hot_wax"]
+[editable path="cold_wax"]
+[editable path="tweezers"]
+[editable path="pull"]
