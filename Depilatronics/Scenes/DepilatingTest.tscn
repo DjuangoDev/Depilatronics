@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/FingerController.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Culo1.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Prefabs/Hair.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Hairy.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Graphics/culo_1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Graphics/culo_mask.png" type="Texture" id=6]
 
 [node name="Level1" type="Node2D"]
 
 [node name="Light2D" type="Light2D" parent="."]
-position = Vector2( 734, 359 )
-texture = ExtResource( 5 )
+position = Vector2( 643, 363 )
+texture = ExtResource( 6 )
 mode = 3
 
 [node name="Culo1" type="Sprite" parent="."]
