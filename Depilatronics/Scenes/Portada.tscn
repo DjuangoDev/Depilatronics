@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/btnCredits.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/btnInicio.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Portada.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/btnSalir.tscn" type="PackedScene" id=4]
+
+[node name="Portada" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 216.0
+margin_top = 544.0
+margin_right = 952.0
+margin_bottom = 608.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="btnInicio" parent="HBoxContainer" instance=ExtResource( 2 )]
+margin_left = 268.0
+margin_right = 332.0
+margin_bottom = 64.0
+alignment = 1
+
+[node name="button" parent="HBoxContainer/btnInicio" index="0"]
+margin_bottom = 64.0
+
+[node name="btnCredits" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 336.0
+margin_right = 400.0
+margin_bottom = 64.0
+alignment = 1
+
+[node name="button" parent="HBoxContainer/btnCredits" index="0"]
+margin_bottom = 64.0
+
+[node name="btnSalir" parent="HBoxContainer" instance=ExtResource( 4 )]
+margin_left = 404.0
+margin_right = 468.0
+margin_bottom = 64.0
+
+[node name="button" parent="HBoxContainer/btnSalir" index="0"]
+margin_bottom = 64.0
+
+[connection signal="pressed" from="HBoxContainer/btnInicio/button" to="." method="_on_inicio_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/btnCredits/button" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/btnSalir/button" to="." method="_on_salir_button_pressed"]
+
+[editable path="HBoxContainer/btnInicio"]
+[editable path="HBoxContainer/btnCredits"]
+[editable path="HBoxContainer/btnSalir"]

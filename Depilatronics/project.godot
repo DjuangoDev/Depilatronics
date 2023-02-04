@@ -8,9 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Hair",
+"language": "GDScript",
+"path": "res://Assets/Prefabs/Hair.gd"
+} ]
+_global_script_class_icons={
+"Hair": ""
+}
+
 [application]
 
 config/name="Depilatronics"
+run/main_scene="res://Scenes/Portada.tscn"
 boot_splash/bg_color=Color( 0.490196, 0.784314, 0.701961, 1 )
 config/icon="res://icon.png"
 
