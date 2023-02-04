@@ -1,0 +1,627 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/FingerController.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Culo1.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Prefabs/Hair.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Hairy.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Graphics/culo_1.png" type="Texture" id=5]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Culo1" type="Sprite" parent="."]
+position = Vector2( 642, 361 )
+texture = ExtResource( 5 )
+hframes = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hairy" type="Node2D" parent="Culo1"]
+script = ExtResource( 4 )
+
+[node name="Hair" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 118, 25 )
+
+[node name="Hair2" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 149, 6 )
+
+[node name="Hair3" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 126, 67 )
+
+[node name="Hair4" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 84, 81 )
+
+[node name="Hair5" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 88, 129 )
+
+[node name="Hair6" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 136, 114 )
+
+[node name="Hair61" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 93, 227 )
+
+[node name="Hair62" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 69, 196 )
+
+[node name="Hair63" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 101, 269 )
+
+[node name="Hair64" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 59, 283 )
+
+[node name="Hair65" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 63, 331 )
+
+[node name="Hair66" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 111, 316 )
+
+[node name="Hair7" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 167, 46 )
+
+[node name="Hair8" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 229, -20 )
+
+[node name="Hair9" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 260, -39 )
+
+[node name="Hair10" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 237, 22 )
+
+[node name="Hair11" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 195, 36 )
+
+[node name="Hair12" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 199, 84 )
+
+[node name="Hair13" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 247, 69 )
+
+[node name="Hair14" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 274, 41 )
+
+[node name="Hair15" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 296, 58 )
+
+[node name="Hair16" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 327, 39 )
+
+[node name="Hair17" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 304, 100 )
+
+[node name="Hair18" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 262, 114 )
+
+[node name="Hair19" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 266, 162 )
+
+[node name="Hair20" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 314, 147 )
+
+[node name="Hair37" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 209, 126 )
+
+[node name="Hair38" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 167, 140 )
+
+[node name="Hair39" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 171, 188 )
+
+[node name="Hair40" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 219, 173 )
+
+[node name="Hair21" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 374, 75 )
+
+[node name="Hair22" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 435, -67 )
+
+[node name="Hair23" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 466, -86 )
+
+[node name="Hair24" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 443, -25 )
+
+[node name="Hair25" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 401, -11 )
+
+[node name="Hair26" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 405, 37 )
+
+[node name="Hair27" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 453, 22 )
+
+[node name="Hair29" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 298, -155 )
+
+[node name="Hair30" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 316, -98 )
+
+[node name="Hair31" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 347, -117 )
+
+[node name="Hair32" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 324, -56 )
+
+[node name="Hair67" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 85, -184 )
+
+[node name="Hair68" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 158, -240 )
+
+[node name="Hair69" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 114, -25 )
+
+[node name="Hair70" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 72, -29 )
+
+[node name="Hair71" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 142, -109 )
+
+[node name="Hair72" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 263, -240 )
+
+[node name="Hair73" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 218, -125 )
+
+[node name="Hair74" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 414, -221 )
+
+[node name="Hair33" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 334, -9 )
+
+[node name="Hair34" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 365, -77 )
+
+[node name="Hair35" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 425, -119 )
+
+[node name="Hair36" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 473, -134 )
+
+[node name="Hair28" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 484, -46 )
+
+[node name="Hair51" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 320, 259 )
+
+[node name="Hair52" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 351, 240 )
+
+[node name="Hair53" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 328, 301 )
+
+[node name="Hair54" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 201, 228 )
+
+[node name="Hair55" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 232, 209 )
+
+[node name="Hair56" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 209, 270 )
+
+[node name="Hair57" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 250, 249 )
+
+[node name="Hair58" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 310, 207 )
+
+[node name="Hair59" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 358, 192 )
+
+[node name="Hair60" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 369, 280 )
+
+[node name="Hair47" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 399, 183 )
+
+[node name="Hair48" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 407, 225 )
+
+[node name="Hair49" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 417, 272 )
+
+[node name="Hair50" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 448, 204 )
+
+[node name="Hair41" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 460, 124 )
+
+[node name="Hair42" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 491, 105 )
+
+[node name="Hair43" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 468, 166 )
+
+[node name="Hair44" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 450, 72 )
+
+[node name="Hair45" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 498, 57 )
+
+[node name="Hair46" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( 509, 145 )
+
+[node name="mirror" type="Node2D" parent="Culo1/Hairy"]
+visible = false
+scale = Vector2( -1, 1 )
+
+[node name="Hair75" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -118, 25 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair76" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -149, 6 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair77" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -126, 67 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair78" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -84, 81 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair79" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -88, 129 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair80" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -136, 114 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair81" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -93, 227 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair82" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -69, 196 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair83" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -101, 269 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair84" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -59, 283 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair85" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -63, 331 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair86" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -111, 316 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair87" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -167, 46 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair88" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -229, -20 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair89" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -260, -39 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair90" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -237, 22 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair91" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -195, 36 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair92" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -199, 84 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair93" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -247, 69 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair94" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -274, 41 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair95" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -296, 58 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair96" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -327, 39 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair97" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -304, 100 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair98" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -262, 114 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair99" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -266, 162 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair100" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -314, 147 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair101" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -209, 126 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair102" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -167, 140 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair103" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -171, 188 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair104" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -219, 173 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair105" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -374, 75 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair106" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -435, -67 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair107" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -466, -86 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair108" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -443, -25 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair109" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -401, -11 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair110" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -405, 37 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair111" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -453, 22 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair112" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -298, -155 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair113" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -316, -98 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair114" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -347, -117 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair115" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -324, -56 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair116" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -85, -184 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair117" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -158, -240 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair118" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -114, -25 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair119" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -72, -29 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair120" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -142, -109 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair121" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -263, -240 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair122" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -218, -125 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair123" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -414, -221 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair124" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -334, -9 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair125" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -365, -77 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair126" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -425, -119 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair127" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -473, -134 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair128" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -484, -46 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair129" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -320, 259 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair130" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -351, 240 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair131" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -328, 301 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair132" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -201, 228 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair133" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -232, 209 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair134" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -209, 270 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair135" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -250, 249 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair136" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -310, 207 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair137" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -358, 192 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair138" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -369, 280 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair139" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -399, 183 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair140" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -407, 225 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair141" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -417, 272 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair142" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -448, 204 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair143" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -460, 124 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair144" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -491, 105 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair145" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -468, 166 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair146" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -450, 72 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair147" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -498, 57 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Hair148" parent="Culo1/Hairy" instance=ExtResource( 3 )]
+position = Vector2( -509, 145 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="SuperficieCuerpo" type="Area2D" parent="Culo1" groups=["Body"]]
+
+[node name="Colision" type="CollisionPolygon2D" parent="Culo1/SuperficieCuerpo"]
+polygon = PoolVector2Array( -542, -358, -552, -39, -541, 153, -516, 354, -46, 359, -52, 140, -4, 101, 28, 142, 37, 212, 33, 355, 517, 359, 543, 159, 554, -60, 551, -228, 530, -362 )
+
+[node name="FingerController" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[connection signal="mouse_entered" from="Culo1/Hairy/Hair2" to="Culo1/Hairy" method="_on_Hair2_mouse_entered"]
