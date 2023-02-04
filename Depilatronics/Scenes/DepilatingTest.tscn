@@ -8,6 +8,11 @@
 
 [node name="Level1" type="Node2D"]
 
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 734, 359 )
+texture = ExtResource( 5 )
+mode = 3
+
 [node name="Culo1" type="Sprite" parent="."]
 position = Vector2( 642, 361 )
 texture = ExtResource( 5 )
