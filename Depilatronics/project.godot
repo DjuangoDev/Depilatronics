@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Hair",
+"language": "GDScript",
+"path": "res://Assets/Prefabs/Hair.gd"
+} ]
+_global_script_class_icons={
+"Hair": ""
+}
+
 [application]
 
 config/name="Depilatronics"

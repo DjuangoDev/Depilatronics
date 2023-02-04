@@ -7,7 +7,7 @@
 [sub_resource type="Animation" id=5]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/0/path = NodePath("tweezers_end/CollisionShape2D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -34,7 +34,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/1/path = NodePath("tweezers_end/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -61,7 +61,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/1/path = NodePath("tweezers_end/CollisionShape2D:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -82,9 +82,10 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 41.1947
+radius = 17.1172
 
 [node name="tweezers" type="Node2D"]
+position = Vector2( 1, 0 )
 script = ExtResource( 3 )
 
 [node name="tweezers" type="AnimationPlayer" parent="."]
@@ -93,10 +94,19 @@ anims/tweezers = SubResource( 1 )
 anims/tweezers_closed = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 105, 3 )
 frames = SubResource( 3 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="tweezers_end" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -99, -1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tweezers_end"]
 shape = SubResource( 4 )
+
+[node name="Position2D" type="Position2D" parent="tweezers_end"]
+scale = Vector2( -25.4665, -2.30887 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="animation_finished" from="tweezers" to="." method="_on_tweezers_animation_finished"]
+[connection signal="body_entered" from="tweezers_end" to="." method="_on_Area2D_body_entered"]
+[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_tween_all_completed"]
