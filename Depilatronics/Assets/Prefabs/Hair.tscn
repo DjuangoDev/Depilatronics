@@ -1,0 +1,224 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Prefabs/Hair.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Graphics/strands.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 18.9
+
+[sub_resource type="CircleShape2D" id=9]
+
+[sub_resource type="Animation" id=3]
+resource_name = "0"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Root:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 46, 12 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Strands:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Strands:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 25, 38 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Strands:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 21, 40 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "3"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Strands:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 38, 27 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Strands:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 27, 37 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Root:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 46, 12 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Strands:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[node name="Hair" type="Area2D"]
+script = ExtResource( 1 )
+velocity = 100
+
+[node name="Root" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Tip" type="Area2D" parent="."]
+position = Vector2( 46, 12 )
+
+[node name="Collision" type="CollisionShape2D" parent="Tip"]
+shape = SubResource( 9 )
+
+[node name="Strands" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+offset = Vector2( 20, 20 )
+hframes = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/0 = SubResource( 3 )
+anims/1 = SubResource( 4 )
+anims/2 = SubResource( 5 )
+anims/3 = SubResource( 6 )
+anims/4 = SubResource( 7 )
+anims/RESET = SubResource( 8 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_Hair_mouse_entered"]
+[connection signal="mouse_entered" from="Tip" to="." method="_on_Tip_mouse_entered"]
