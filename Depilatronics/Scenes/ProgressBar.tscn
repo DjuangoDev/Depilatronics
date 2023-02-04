@@ -1,21 +1,54 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Assets/Graphics/Relleno.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Graphics/Barra.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Graphics/termometro_cristal.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Graphics/termometro_bola.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/ProgressBar.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Graphics/termometro_barra.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Graphics/cara_2_02.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Graphics/cara_2_01.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Graphics/cara_3_01.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Graphics/cara_3_02.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Graphics/cara_1_02.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Graphics/cara_1_01.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "level1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "level2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "level3",
+"speed": 5.0
+} ]
 
 [node name="ProgressBar" type="MarginContainer"]
 anchor_top = 0.5
 anchor_bottom = 0.5
+margin_left = 20.0
 margin_top = -360.0
 margin_right = 55.0
 margin_bottom = 360.0
 script = ExtResource( 3 )
 
 [node name="TextureProgress" type="TextureProgress" parent="."]
-margin_right = 55.0
+margin_right = 191.0
 margin_bottom = 720.0
-value = 10.0
-texture_over = ExtResource( 2 )
-texture_progress = ExtResource( 1 )
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 1 )
+texture_progress = ExtResource( 4 )
 fill_mode = 3
+
+[node name="face" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 525 )
+frames = SubResource( 1 )
+animation = "level1"
+frame = 1
+playing = true
