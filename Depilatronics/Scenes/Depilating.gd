@@ -18,11 +18,9 @@ var maximum_inflicted_pain = 40
 
 func _ready():
 	total_pain = minimum_pain
-	var counter = 5
 	for hair in $Culo1/Hairy.get_children():
 		hair_number += 1
 		hair.connect("hair_pulled",self,"another_hair_bites_the_dust")
-		
 		var zones=hair.get_overlapping_areas()
 		for zone in zones:
 			if zone.is_in_group("unmanageable_pain"):
@@ -95,7 +93,7 @@ func finished(reason):
 	if reason=="NO_TIME":
 		$FinalNotice.visible=true
 		$FinalNotice/TimeOut.visible=true
-		$FinalNotice/Victory.set_stats(maximum_inflicted_pain,str($HUD/Timer.time_left),hair_number,1)
+		$FinalNotice/TimeOut.set_stats(maximum_inflicted_pain,str($HUD/Timer.time_left),hair_number,1)
 	elif reason=="VICTORY":
 		$FinalNotice.visible=true
 		$FinalNotice/Victory.visible=true
