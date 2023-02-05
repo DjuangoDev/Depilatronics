@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Graphics/termometro_cristal.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Graphics/termometro_bola.png" type="Texture" id=2]
@@ -10,9 +10,15 @@
 [ext_resource path="res://Assets/Graphics/cara_3_02.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Graphics/cara_1_02.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Graphics/cara_1_01.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Graphics/cara_4_01.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 10 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "level1",

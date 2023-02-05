@@ -30,5 +30,5 @@ func _on_pull_pressed():
 func disable_all():
 	hot_wax.but.pressed = false
 	tweezers.but.pressed = false
-	pull.TextureButton.pressed = false
+	pull.but.pressed = false
 	
