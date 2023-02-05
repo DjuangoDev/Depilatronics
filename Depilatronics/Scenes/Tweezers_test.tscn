@@ -1,15 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Tweezers.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Tweezers_test.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Prefabs/Hair.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
 
 [node name="Tweezers_test" type="Node2D"]
 position = Vector2( -1, 7 )
 script = ExtResource( 2 )
 
 [node name="tweezers" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1319, 341 )
+position = Vector2( 1260, 737 )
 
 [node name="Hair" parent="." instance=ExtResource( 3 )]
 position = Vector2( 529, 350 )
+tipo_pelo = 0
+aleatorio = true
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+margin_left = 40.0
+margin_right = 1242.0
+margin_bottom = 619.0
+
+[editable path="tweezers"]

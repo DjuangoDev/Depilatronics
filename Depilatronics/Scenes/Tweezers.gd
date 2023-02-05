@@ -2,13 +2,15 @@ extends Node2D
 
 onready var tweezers := $tweezers
 onready var tween := $Tween
-onready var tweezers_end := $tweezers_end
+onready var tweezers_end := $AnimatedSprite/tweezers_end
+onready var sprite := $AnimatedSprite
 
 var over_hair = false
 
 const exit_position := Vector2(1500,300)
 
 func _ready():
+	global_position = Vector2(1260,737)
 	tweezers.play("tweezers")
 
 func close():
@@ -20,6 +22,13 @@ func open():
 
 func pull_hair():
 	move_to(exit_position)
+
+func rotate(degree):
+	pass
+
+func use_tweezers(position):
+	
+	pass
 
 func move_to(pos):
 	if not tweezers.is_playing() and not tween.is_active():
@@ -43,9 +52,10 @@ func _on_Area2D_body_entered(body):
 func _on_tweezers_animation_finished(anim_name):
 	if anim_name == "tweezers_closed":
 		var areas = tweezers_end.get_overlapping_areas()
-		for area in areas:
-			if area is Hair:
-				over_hair = true
-				return
+		if areas:
+			for area in areas:
+				if area is Hair:
+					over_hair = true
+					return
 		tweezers.play("tweezers")
 		move_to(exit_position)
