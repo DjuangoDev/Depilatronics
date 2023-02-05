@@ -111,9 +111,6 @@ margin_left = 0.0
 margin_right = 84.0
 rect_scale = Vector2( 1, 1 )
 
-[node name="Label" parent="portadaMargin/menuPortada/btnInicio/button" index="0"]
-custom_colors/font_color = Color( 0.513726, 0.211765, 0.658824, 1 )
-
 [node name="btnCreditos" parent="portadaMargin/menuPortada" instance=ExtResource( 1 )]
 anchor_right = 0.0
 margin_left = 114.0
@@ -124,9 +121,6 @@ margin_left = 0.0
 margin_right = 84.0
 rect_scale = Vector2( 1, 1 )
 
-[node name="Label" parent="portadaMargin/menuPortada/btnCreditos/button" index="0"]
-custom_colors/font_color = Color( 0.513726, 0.211765, 0.658824, 1 )
-
 [node name="btnSalir" parent="portadaMargin/menuPortada" instance=ExtResource( 4 )]
 anchor_right = 0.0
 margin_left = 228.0
@@ -136,9 +130,6 @@ margin_right = 312.0
 margin_left = 0.0
 margin_right = 84.0
 rect_scale = Vector2( 1, 1 )
-
-[node name="Label" parent="portadaMargin/menuPortada/btnSalir/button" index="0"]
-custom_colors/font_color = Color( 0.513726, 0.211765, 0.658824, 1 )
 
 [connection signal="pressed" from="portadaMargin/menuPortada/btnInicio/button" to="." method="_on_inicio_button_pressed"]
 [connection signal="pressed" from="portadaMargin/menuPortada/btnCreditos/button" to="." method="_on_creditos_button_pressed"]

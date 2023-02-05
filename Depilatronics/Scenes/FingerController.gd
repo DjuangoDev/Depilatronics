@@ -2,6 +2,7 @@ extends Node2D
 
 
 var Wax=preload("res://Assets/Prefabs/HotWax.tscn")
+onready var tweezers := get_node("../tweezers")
 var current_wax=null
 
 # Called when the node enters the scene tree for the first time.
@@ -11,9 +12,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("pinchar"):
-		current_wax=Wax.instance()
-		add_child(current_wax)
-		current_wax.init_waxing(get_global_mouse_position())
-	elif Input.is_action_just_released("pinchar"):
-		current_wax.end_waxing(get_global_mouse_position())
+#	if Input.is_action_just_pressed("pinchar"):
+#		current_wax=Wax.instance()
+#		add_child(current_wax)
+#		current_wax.init_waxing(get_global_mouse_position())
+#	elif Input.is_action_just_released("pinchar"):
+#		current_wax.end_waxing(get_global_mouse_position())
+	pass
