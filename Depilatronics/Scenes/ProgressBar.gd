@@ -21,8 +21,8 @@ func _process(delta):
 	else:
 		face.animation = "level1"
 
-func add_pain(pain):
-	progress.value = progress.value + pain
+func set_pain(pain):
+	progress.value = pain
 
 func get_pain():
 	return progress.value
