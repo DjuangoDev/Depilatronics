@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Graphics/mano_pinzas_cerradas.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Graphics/mano_pinzas_abiertas.png" type="Texture" id=2]
@@ -32,7 +32,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 444, 1381 ), Vector2( 394, 1303 ) ]
+"values": [ Vector2( 490, 1470 ), Vector2( 444, 1381 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("AnimatedSprite:frame")
@@ -46,9 +46,62 @@ tracks/1/keys = {
 "update": 1,
 "values": [ 0 ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite/tweezers_end/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "disappear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 444, 1381 ), Vector2( 490, 1470 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite/tweezers_end/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "tweezers"
+length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
 tracks/0/interp = 1
@@ -76,6 +129,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "tweezers_closed"
+length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
 tracks/0/interp = 1
@@ -83,7 +137,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.1 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 1 ]
@@ -119,13 +173,15 @@ script = ExtResource( 3 )
 [node name="tweezers" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 5 )
 anims/appear = SubResource( 6 )
+anims/disappear = SubResource( 7 )
 anims/tweezers = SubResource( 1 )
 anims/tweezers_closed = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 444, 1381 )
+position = Vector2( 490, 1470 )
 rotation = -0.212571
 frames = SubResource( 3 )
+frame = 1
 offset = Vector2( 1, -791 )
 
 [node name="tweezers_end" type="Area2D" parent="AnimatedSprite"]
@@ -140,5 +196,3 @@ scale = Vector2( -25.4665, -2.30887 )
 [node name="Tween" type="Tween" parent="."]
 
 [connection signal="animation_finished" from="tweezers" to="." method="_on_tweezers_animation_finished"]
-[connection signal="body_entered" from="AnimatedSprite/tweezers_end" to="." method="_on_Area2D_body_entered"]
-[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_tween_all_completed"]

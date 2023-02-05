@@ -194,10 +194,8 @@ tracks/2/keys = {
 "values": [ 0 ]
 }
 
-[node name="Hair" type="Area2D"]
+[node name="Hair" type="Area2D" groups=["hair"]]
 script = ExtResource( 1 )
-tipo_pelo = null
-aleatorio = null
 velocity = 100
 
 [node name="Root" type="CollisionShape2D" parent="."]
@@ -222,5 +220,4 @@ anims/3 = SubResource( 6 )
 anims/4 = SubResource( 7 )
 anims/RESET = SubResource( 8 )
 
-[connection signal="mouse_entered" from="." to="." method="_on_Hair_mouse_entered"]
 [connection signal="mouse_entered" from="Tip" to="." method="_on_Tip_mouse_entered"]

@@ -56,5 +56,4 @@ fill_mode = 3
 position = Vector2( 96, 525 )
 frames = SubResource( 1 )
 animation = "level1"
-frame = 1
 playing = true
