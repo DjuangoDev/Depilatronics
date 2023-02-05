@@ -17,4 +17,5 @@ func _ready():
 
 
 func _on_volver_button_pressed():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://Scenes/Portada.tscn")
