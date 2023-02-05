@@ -88,48 +88,61 @@ anims/RESET = SubResource( 1 )
 anims/inicio = SubResource( 2 )
 
 [node name="portadaMargin" type="MarginContainer" parent="."]
-margin_top = 512.0
-margin_right = 640.0
-margin_bottom = 616.0
-rect_scale = Vector2( 2, 2 )
-
-[node name="menuPortada" type="HBoxContainer" parent="portadaMargin"]
-margin_left = 164.0
-margin_top = 10.0
-margin_right = 476.0
-margin_bottom = 93.0
+margin_left = 200.0
+margin_top = 500.0
+margin_right = 840.0
+margin_bottom = 674.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
-custom_constants/separation = 30
+
+[node name="menuPortada" type="HBoxContainer" parent="portadaMargin"]
+margin_left = 78.0
+margin_right = 562.0
+margin_bottom = 174.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_constants/separation = 50
 
 [node name="btnInicio" parent="portadaMargin/menuPortada" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_right = 84.0
+margin_right = 128.0
+margin_bottom = 174.0
 
 [node name="button" parent="portadaMargin/menuPortada/btnInicio" index="0"]
 margin_left = 0.0
-margin_right = 84.0
-rect_scale = Vector2( 1, 1 )
+margin_right = 128.0
+
+[node name="Label" parent="portadaMargin/menuPortada/btnInicio" index="1"]
+margin_left = 20.0
+margin_right = 107.0
 
 [node name="btnCreditos" parent="portadaMargin/menuPortada" instance=ExtResource( 1 )]
 anchor_right = 0.0
-margin_left = 114.0
-margin_right = 198.0
+margin_left = 178.0
+margin_right = 306.0
+margin_bottom = 174.0
 
 [node name="button" parent="portadaMargin/menuPortada/btnCreditos" index="0"]
 margin_left = 0.0
-margin_right = 84.0
-rect_scale = Vector2( 1, 1 )
+margin_right = 128.0
+
+[node name="Label" parent="portadaMargin/menuPortada/btnCreditos" index="1"]
+margin_left = 1.0
+margin_right = 127.0
 
 [node name="btnSalir" parent="portadaMargin/menuPortada" instance=ExtResource( 4 )]
 anchor_right = 0.0
-margin_left = 228.0
-margin_right = 312.0
+margin_left = 356.0
+margin_right = 484.0
+margin_bottom = 174.0
 
 [node name="button" parent="portadaMargin/menuPortada/btnSalir" index="0"]
 margin_left = 0.0
-margin_right = 84.0
-rect_scale = Vector2( 1, 1 )
+margin_right = 128.0
+
+[node name="Label" parent="portadaMargin/menuPortada/btnSalir" index="1"]
+margin_left = 29.0
+margin_right = 98.0
 
 [connection signal="pressed" from="portadaMargin/menuPortada/btnInicio/button" to="." method="_on_inicio_button_pressed"]
 [connection signal="pressed" from="portadaMargin/menuPortada/btnCreditos/button" to="." method="_on_creditos_button_pressed"]
