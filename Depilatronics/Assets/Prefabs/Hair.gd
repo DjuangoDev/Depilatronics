@@ -43,3 +43,8 @@ func _on_Tip_mouse_entered():
 	
 func see_to(position_):
 	pass
+
+
+# extraction_quality = 1-3
+func i_have_pulled_you(extraction_quality):
+	emit_signal("hair_pulled",)
