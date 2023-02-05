@@ -11,6 +11,7 @@ func _ready():
 		hair_number=hair_number+1
 		hair.connect("hair_pulled",self,"another_hair_bites_the_dust")
 		
+		# hair.
 	print(hair_number)
 
 func _process(delta):
@@ -22,8 +23,10 @@ func _process(delta):
 # hair_zone: 1-3
 #	
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
-	pass
 	
+	hair_number=hair_number-1
+	if hair_number<0:
+		$HUD/AnimationPlayer.play("victory")
 
 func _on_hot_wax_pressed():
 	selected_tool = "HOT_WAX"

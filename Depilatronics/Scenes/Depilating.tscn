@@ -653,6 +653,29 @@ margin_left = 1240.0
 margin_right = 1240.0
 margin_bottom = 678.0
 
+[node name="PainZones" type="Node2D" parent="."]
+
+[node name="UnmanageblePain" type="Area2D" parent="PainZones" groups=["unmanageable_pain"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PainZones/UnmanageblePain"]
+polygon = PoolVector2Array( 413, 32, 640, 146, 854, 37, 874, -52, 401, -32 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="PainZones/UnmanageblePain"]
+polygon = PoolVector2Array( 612, 497, 429, 540, 376, 552, 376, 748, 893, 748, 899, 676, 895, 561, 716, 525, 642, 480 )
+
+[node name="HighPain" type="Area2D" parent="PainZones" groups=["high_pain"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PainZones/HighPain"]
+polygon = PoolVector2Array( 1257, 771, 1265, 395, 985, 437, 691, 401, 310, 429, 55, 378, 70, 748, 364, 744, 372, 542, 634, 465, 776, 525, 899, 563, 914, 754 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="PainZones/HighPain"]
+polygon = PoolVector2Array( 53, 197, 77, -7, 349, 4, 640, 167, 908, 8, 1318, -24, 1293, 393, 1121, 410, 1014, 204, 914, 167, 657, 267, 391, 174, 266, 180, 204, 395, 55, 367 )
+
+[node name="MediumPain" type="Area2D" parent="PainZones" groups=["medium_pain"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PainZones/MediumPain"]
+polygon = PoolVector2Array( 274, 184, 213, 397, 329, 418, 646, 395, 978, 423, 1114, 410, 1006, 214, 914, 176, 663, 276, 393, 184 )
+
 [connection signal="mouse_entered" from="Culo1/Hairy/Hair2" to="Culo1/Hairy" method="_on_Hair2_mouse_entered"]
 [connection signal="pressed" from="HUD/Buttons/hot_wax/TextureButton" to="." method="_on_hot_wax_pressed"]
 [connection signal="pressed" from="HUD/Buttons/tweezers/TextureButton" to="." method="_on_tweezers_pressed"]
