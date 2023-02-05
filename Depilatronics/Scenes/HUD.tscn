@@ -53,6 +53,10 @@ mouse_filter = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+one_shot = true
+
 [connection signal="pressed" from="Buttons/tweezers/TextureButton" to="." method="_on_tweezers_pressed"]
 [connection signal="pressed" from="Buttons/hot_wax/TextureButton" to="." method="_on_hot_wax_pressed"]
 [connection signal="pressed" from="Buttons/pull/TextureButton" to="." method="_on_pull_pressed"]

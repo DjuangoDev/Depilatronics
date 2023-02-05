@@ -5,6 +5,8 @@ onready var hot_wax := $Buttons/hot_wax
 onready var tweezers := $Buttons/tweezers
 onready var pull := $Buttons/pull
 
+var total_time = 120
+
 func _ready():
 	hot_wax.but.pressed = true
 

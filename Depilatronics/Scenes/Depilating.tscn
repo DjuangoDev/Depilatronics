@@ -735,6 +735,7 @@ autostart = true
 [connection signal="pressed" from="HUD/Buttons/tweezers/TextureButton" to="." method="_on_tweezers_pressed"]
 [connection signal="pressed" from="HUD/Buttons/hot_wax/TextureButton" to="." method="_on_hot_wax_pressed"]
 [connection signal="pressed" from="HUD/Buttons/pull/TextureButton" to="." method="_on_pull_pressed"]
+[connection signal="timeout" from="HUD/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="decrease_pain" to="." method="_on_decrease_pain_timeout"]
 
 [editable path="tweezers"]

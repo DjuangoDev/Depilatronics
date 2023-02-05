@@ -75,3 +75,8 @@ func _on_decrease_pain_timeout():
 	print("Segundos")
 	print(total_pain)
 
+func finished(reason):
+	pass
+
+func _on_Timer_timeout():
+	finished("NO_TIME")
