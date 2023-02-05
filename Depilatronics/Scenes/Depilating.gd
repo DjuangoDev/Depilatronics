@@ -7,10 +7,13 @@ var selected_tool = "FINGER"
 onready var tweezers := $tweezers
 onready var pain_zone := $PainZones
 onready var hud := $HUD
+onready var no := $no
 
 var pain_reduction = 1
 var pain_hair_base = 3
+var pain_ass_pinch = 15
 var minimum_pain = 35
+var maximum_pain = 100
 
 func _ready():
 	total_pain = minimum_pain
@@ -36,14 +39,22 @@ func _unhandled_input(event):
 	
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
 	if extraction_tool == "TWEEZERS":
-		total_pain += pain_hair_base * extraction_perfection * hair_zone
-		hud.set_pain(total_pain)
-		print(total_pain)
+		no.play(0.32)
+		add_total_pain(pain_hair_base * extraction_perfection * hair_zone)
 	hair_number=hair_number-1
 	if hair_number<=0:
-		#$HUD/AnimationPlayer.play("victory")
+
 		finished("VICTORY")
-		
+
+func add_total_pain(pain):
+	total_pain += pain
+	if total_pain < minimum_pain:
+		total_pain = minimum_pain
+	elif total_pain >= maximum_pain:
+		total_pain = maximum_pain
+	hud.set_pain(total_pain)
+	
+
 func _on_hot_wax_pressed():
 	if selected_tool == "TWEEEZERS":
 		tweezers.disappear()
@@ -63,18 +74,14 @@ func _on_pull_pressed():
 
 func _on_tweezers_in_skin_pinch(pain_):
 	squinch(pain_)
+	add_total_pain(pain_ass_pinch)
 
 func squinch(pain_):
 	$CuloAnimator.play("squinch")
 
 
 func _on_decrease_pain_timeout():
-	total_pain -= pain_reduction
-	if total_pain < minimum_pain:
-		total_pain = minimum_pain
-	hud.set_pain(total_pain)
-	print("Segundos")
-	print(total_pain)
+	add_total_pain(-pain_reduction)
 
 func _on_Timer_timeout():
 	finished("NO_TIME")
