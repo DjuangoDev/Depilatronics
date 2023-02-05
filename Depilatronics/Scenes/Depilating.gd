@@ -15,6 +15,9 @@ var pain_ass_pinch = 15
 var minimum_pain = 35
 var maximum_pain = 100
 
+var band=null
+var Band=preload("res://Assets/Prefabs/HotWaxBand.tscn")
+
 func _ready():
 	total_pain = minimum_pain
 	for hair in $Culo1/Hairy.get_children():
@@ -34,9 +37,25 @@ func _ready():
 #func _process(delta):
 	# $HUD/ProgressBar.get_
 func _unhandled_input(event):
-   if event is InputEventMouseButton and selected_tool == "TWEEEZERS":
-	   tweezers.use_tweezers(event.get_position())
-	
+	if event is InputEventMouseButton:
+		var mouse_position=get_global_mouse_position()
+		
+		if selected_tool == "TWEEEZERS":
+			tweezers.use_tweezers(event.get_position())
+		elif selected_tool == "HOT_WAX":
+			if band==null:
+				band=Band.instance()
+				$Waxing.add_child(band)
+				
+			
+				band.init_spreading(mouse_position)
+			elif band.bandState==band.BandState.SPREADING:
+				band.stop_spreading(mouse_position)
+				band=null
+		elif selected_tool == "PULL":
+			pass
+			
+			
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
 	if extraction_tool == "TWEEZERS":
 		no.play(0.32)
