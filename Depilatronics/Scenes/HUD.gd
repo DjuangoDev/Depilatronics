@@ -4,11 +4,17 @@ onready var progress := $ProgressBar
 onready var hot_wax := $Buttons/hot_wax
 onready var tweezers := $Buttons/tweezers
 onready var pull := $Buttons/pull
+onready var timer := $Timer
+onready var timer_label : Label = $Buttons/timer/time
 
 var total_time = 120
 
 func _ready():
 	hot_wax.but.pressed = true
+
+func _process(delta):
+	if not int(timer.time_left) == int(timer_label.text):
+		timer_label.text = str(int(timer.time_left))
 
 func _input(event):
 	if event.is_action_pressed("ui_right"):
