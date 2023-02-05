@@ -109,7 +109,9 @@ margin_right = 84.0
 [node name="button" parent="portadaMargin/menuPortada/btnInicio" index="0"]
 margin_left = 0.0
 margin_right = 84.0
+
 rect_scale = Vector2( 1, 1 )
+
 
 [node name="btnCreditos" parent="portadaMargin/menuPortada" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -119,7 +121,9 @@ margin_right = 198.0
 [node name="button" parent="portadaMargin/menuPortada/btnCreditos" index="0"]
 margin_left = 0.0
 margin_right = 84.0
+
 rect_scale = Vector2( 1, 1 )
+
 
 [node name="btnSalir" parent="portadaMargin/menuPortada" instance=ExtResource( 4 )]
 anchor_right = 0.0
@@ -129,7 +133,9 @@ margin_right = 312.0
 [node name="button" parent="portadaMargin/menuPortada/btnSalir" index="0"]
 margin_left = 0.0
 margin_right = 84.0
+
 rect_scale = Vector2( 1, 1 )
+
 
 [connection signal="pressed" from="portadaMargin/menuPortada/btnInicio/button" to="." method="_on_inicio_button_pressed"]
 [connection signal="pressed" from="portadaMargin/menuPortada/btnCreditos/button" to="." method="_on_creditos_button_pressed"]
