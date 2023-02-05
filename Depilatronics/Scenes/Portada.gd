@@ -16,13 +16,13 @@ func _ready():
 #	pass
 
 
-func _on_credits_button_pressed():
-	get_tree().change_scene("res://Scenes/credits.tscn")
-	
-
 func _on_inicio_button_pressed():
-	get_tree().change_scene("res://Scenes/DepilatingTest.tscn")
+	pass # Replace with function body.
 
 
 func _on_salir_button_pressed():
 	get_tree().quit()
+	
+
+func _on_creditos_button_pressed():
+	get_tree().change_scene("res://Scenes/credits.tscn")
