@@ -14,9 +14,12 @@ export var width=30
 
 var seleccionado=false
 var encima=false
+enum BandState  {PREPARED, PUT, PULLING, PULLED}
+var bandState=BandState.PREPARED
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	lon[0]=$Banda.points[0].distance_to($Banda.points[1])
 	lon[1]=$Banda2.points[0].distance_to($Banda2.points[1])
 	direccion=($Banda.points[1]-$Banda.points[0]).normalized()
@@ -31,6 +34,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var longi2
+	
+#	if bandState==Bans
+
+	
 	if Input.is_action_pressed("pinchar"):
 		if encima:
 			$Banda2.visible=true
