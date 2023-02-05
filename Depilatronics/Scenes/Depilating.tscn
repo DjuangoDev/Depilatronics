@@ -25,225 +25,373 @@ script = ExtResource( 10 )
 
 [node name="Hair" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 118, 25 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair2" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 149, 6 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair3" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 126, 67 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair4" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 84, 81 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair5" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 88, 129 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair6" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 136, 114 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair61" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 93, 227 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair62" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 69, 196 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair63" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 101, 269 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair64" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 59, 283 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair65" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 63, 331 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair66" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 111, 316 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair7" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 167, 46 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair8" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 229, -20 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair9" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 260, -39 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair10" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 237, 22 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair11" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 195, 36 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair12" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 199, 84 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair13" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 247, 69 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair14" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 274, 41 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair15" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 296, 58 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair16" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 327, 39 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair17" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 304, 100 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair18" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 262, 114 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair19" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 266, 162 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair20" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 314, 147 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair37" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 209, 126 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair38" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 167, 140 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair39" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 171, 188 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair40" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 219, 173 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair21" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 374, 75 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair22" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 435, -67 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair23" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 466, -86 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair24" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 443, -25 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair25" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 401, -11 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair26" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 405, 37 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair27" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 453, 22 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair29" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 298, -155 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair30" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 316, -98 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair31" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 347, -117 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair32" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 324, -56 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair67" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 85, -184 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair68" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 158, -240 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair69" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 114, -25 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair70" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 72, -29 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair71" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 142, -109 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair72" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 263, -240 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair73" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 218, -125 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair74" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 414, -221 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair33" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 334, -9 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair34" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 365, -77 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair35" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 425, -119 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair36" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 473, -134 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair28" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 484, -46 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair51" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 320, 259 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair52" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 351, 240 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair53" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 328, 301 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair54" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 201, 228 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair55" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 232, 209 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair56" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 209, 270 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair57" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 250, 249 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair58" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 310, 207 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair59" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 358, 192 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair60" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 369, 280 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair47" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 399, 183 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair48" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 407, 225 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair49" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 417, 272 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair50" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 448, 204 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair41" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 460, 124 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair42" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 491, 105 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair43" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 468, 166 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair44" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 450, 72 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair45" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 498, 57 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair46" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( 509, 145 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="mirror" type="Node2D" parent="Culo1/Hairy"]
 visible = false
@@ -253,371 +401,519 @@ scale = Vector2( -1, 1 )
 position = Vector2( -118, 25 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair76" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -149, 6 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair77" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -126, 67 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair78" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -84, 81 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair79" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -88, 129 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair80" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -136, 114 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair81" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -93, 227 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair82" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -69, 196 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair83" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -101, 269 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair84" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -59, 283 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair85" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -63, 331 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair86" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -111, 316 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair87" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -167, 46 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair88" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -229, -20 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair89" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -260, -39 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair90" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -237, 22 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair91" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -195, 36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair92" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -199, 84 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair93" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -247, 69 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair94" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -274, 41 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair95" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -296, 58 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair96" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -327, 39 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair97" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -304, 100 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair98" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -262, 114 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair99" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -266, 162 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair100" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -314, 147 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair101" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -209, 126 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair102" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -167, 140 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair103" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -171, 188 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair104" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -219, 173 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair105" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -374, 75 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair106" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -435, -67 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair107" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -466, -86 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair108" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -443, -25 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair109" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -401, -11 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair110" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -405, 37 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair111" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -453, 22 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair112" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -298, -155 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair113" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -316, -98 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair114" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -347, -117 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair115" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -324, -56 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair116" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -85, -184 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair117" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -158, -240 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair118" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -114, -25 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair119" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -72, -29 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair120" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -142, -109 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair121" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -263, -240 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair122" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -218, -125 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair123" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -414, -221 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair124" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -334, -9 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair125" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -365, -77 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair126" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -425, -119 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair127" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -473, -134 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair128" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -484, -46 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair129" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -320, 259 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair130" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -351, 240 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair131" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -328, 301 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair132" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -201, 228 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair133" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -232, 209 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair134" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -209, 270 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair135" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -250, 249 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair136" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -310, 207 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair137" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -358, 192 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair138" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -369, 280 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair139" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -399, 183 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair140" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -407, 225 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair141" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -417, 272 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair142" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -448, 204 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair143" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -460, 124 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair144" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -491, 105 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair145" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -468, 166 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair146" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -450, 72 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair147" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -498, 57 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="Hair148" parent="Culo1/Hairy" instance=ExtResource( 8 )]
 position = Vector2( -509, 145 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
+tipo_pelo = 0
+aleatorio = true
 
 [node name="SuperficieCuerpo" type="Area2D" parent="Culo1" groups=["Body"]]
 
@@ -655,12 +951,12 @@ margin_bottom = 678.0
 
 [node name="PainZones" type="Node2D" parent="."]
 
-[node name="UnmanageblePain" type="Area2D" parent="PainZones" groups=["unmanageable_pain"]]
+[node name="UnmanageablePain" type="Area2D" parent="PainZones" groups=["unmanageable_pain"]]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PainZones/UnmanageblePain"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PainZones/UnmanageablePain"]
 polygon = PoolVector2Array( 413, 32, 640, 146, 854, 37, 874, -52, 401, -32 )
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="PainZones/UnmanageblePain"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="PainZones/UnmanageablePain"]
 polygon = PoolVector2Array( 612, 497, 429, 540, 376, 552, 376, 748, 893, 748, 899, 676, 895, 561, 716, 525, 642, 480 )
 
 [node name="HighPain" type="Area2D" parent="PainZones" groups=["high_pain"]]

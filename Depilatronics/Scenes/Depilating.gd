@@ -11,7 +11,15 @@ func _ready():
 		hair_number=hair_number+1
 		hair.connect("hair_pulled",self,"another_hair_bites_the_dust")
 		
-		# hair.
+		var zones=hair.get_overlapping_areas()
+		for zone in zones:
+			if zone.is_in_group("UnmanegeablePain"):
+				hair.pain=3
+			elif zone.is_in_group("HighPain"):
+				hair.pain=2
+			elif zone.is_in_group("MediumPain"):
+				hair.pain=1
+		
 	print(hair_number)
 
 func _process(delta):

@@ -5,12 +5,13 @@ class_name Hair
 signal tip_touched(object)
 signal hair_pulled(extraction_tool,hair_difficulty,extraction_quality)
 
+export var pain=1
 export var tipo_pelo=0
 export var aleatorio=true
 export var velocity=10
 
-var falling=false
 
+var falling=false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -48,4 +49,4 @@ func see_to(position_):
 
 # extraction_quality = 1-3
 func i_have_pulled_you(extraction_tool,extraction_quality):
-	emit_signal("hair_pulled",extraction_tool,hair_difficulty,extraction_quality)
+	emit_signal("hair_pulled",extraction_tool,pain,extraction_quality)
