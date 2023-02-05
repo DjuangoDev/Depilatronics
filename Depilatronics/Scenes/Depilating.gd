@@ -46,14 +46,13 @@ func _unhandled_input(event):
 			if band==null:
 				band=Band.instance()
 				$Waxing.add_child(band)
-				
 			
 				band.init_spreading(mouse_position)
 			elif band.bandState==band.BandState.SPREADING:
 				band.stop_spreading(mouse_position)
 				band=null
 		elif selected_tool == "PULL":
-			pass
+			band.start_pulling(mouse_position)
 			
 			
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
