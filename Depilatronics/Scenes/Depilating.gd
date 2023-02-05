@@ -14,11 +14,11 @@ func _ready():
 		
 		var zones=hair.get_overlapping_areas()
 		for zone in zones:
-			if zone.is_in_group("UnmanegeablePain"):
+			if zone.is_in_group("unmanageable_pain"):
 				hair.pain=3
-			elif zone.is_in_group("HighPain"):
+			elif zone.is_in_group("high_pain"):
 				hair.pain=2
-			elif zone.is_in_group("MediumPain"):
+			elif zone.is_in_group("medium_pain"):
 				hair.pain=1
 	pain_zone.queue_free()
 
@@ -49,3 +49,9 @@ func _on_pull_pressed():
 	if selected_tool == "TWEEEZERS":
 		tweezers.disappear()
 	selected_tool = "PULL"
+
+func _on_tweezers_in_skin_pinch(pain_):
+	squinch(pain_)
+
+func squinch(pain_):
+	$CuloAnimator.play("squinch")

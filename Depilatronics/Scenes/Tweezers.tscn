@@ -129,7 +129,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "tweezers_closed"
-length = 0.3
+length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
 tracks/0/interp = 1
@@ -137,7 +137,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.1 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 1 ]
@@ -181,6 +181,7 @@ anims/tweezers_closed = SubResource( 2 )
 position = Vector2( 490, 1470 )
 rotation = -0.212571
 frames = SubResource( 3 )
+frame = 1
 offset = Vector2( 1, -791 )
 
 [node name="tweezers_end" type="Area2D" parent="AnimatedSprite"]

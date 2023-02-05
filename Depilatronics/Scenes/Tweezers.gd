@@ -1,5 +1,7 @@
 extends Node2D
 
+signal in_skin_pinch(area)
+
 onready var tweezers := $tweezers
 onready var tween := $Tween
 onready var tweezers_end := $AnimatedSprite/tweezers_end
@@ -57,6 +59,10 @@ func _on_Area2D_body_entered(body):
 
 
 func _on_tweezers_animation_finished(anim_name):
+	var in_skin=false
+	var in_hair=false
+	var pain_=1
+	
 	print("animacion")
 	if anim_name == "tweezers_closed":
 		print("End tweezers closed")
@@ -65,9 +71,23 @@ func _on_tweezers_animation_finished(anim_name):
 			if area.is_in_group("hair"):
 				pull_hair(area)
 				print("Hair pulled")
-				break
+				in_hair=true
+				break	
 			else:
 				#TODO pinchazo en culete
-				pass
+				in_skin=true
+				if area.is_in_group("unmanageable_pain"):
+					pain_=3
+				elif area.is_in_group("high_pain"):
+					pain_=2
+				elif area.is_in_group("medium_pain"):
+					pain_=1
+				# else:
+				# 	in_skin=false
+								
+		if in_skin:
+			# pull_skin()
+			emit_signal("in_skin_pinch",pain_)
+						
 		tweezers.play("tweezers")
 		move_to(idle_position)
