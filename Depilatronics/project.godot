@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="Depilatronics"
 run/main_scene="res://Scenes/Portada.tscn"
-boot_splash/bg_color=Color( 0.490196, 0.784314, 0.701961, 1 )
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
 [display]
