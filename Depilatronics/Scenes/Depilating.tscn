@@ -48,7 +48,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 2 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 1, 0 ]
@@ -721,7 +721,6 @@ margin_left = 1240.0
 margin_right = 1240.0
 margin_bottom = 678.0
 
-
 [node name="CuloAnimator" type="AnimationPlayer" parent="."]
 autoplay = "relaxed bottom"
 anims/RESET = SubResource( 1 )
@@ -730,7 +729,6 @@ anims/squinch = SubResource( 3 )
 
 [node name="decrease_pain" type="Timer" parent="."]
 autostart = true
-
 
 [connection signal="mouse_entered" from="Culo1/Hairy/Hair2" to="Culo1/Hairy" method="_on_Hair2_mouse_entered"]
 [connection signal="in_skin_pinch" from="tweezers" to="." method="_on_tweezers_in_skin_pinch"]
