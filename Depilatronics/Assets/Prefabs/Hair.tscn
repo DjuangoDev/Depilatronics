@@ -196,8 +196,6 @@ tracks/2/keys = {
 
 [node name="Hair" type="Area2D" groups=["hair"]]
 script = ExtResource( 1 )
-tipo_pelo = null
-aleatorio = null
 velocity = 100
 
 [node name="Root" type="CollisionShape2D" parent="."]

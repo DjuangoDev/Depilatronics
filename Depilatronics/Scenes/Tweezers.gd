@@ -62,26 +62,12 @@ func _on_tweezers_animation_finished(anim_name):
 		print("End tweezers closed")
 		var areas = tweezers_end.get_overlapping_areas()
 		for area in areas:
-			if area is Hair:
+			if area.is_in_group("hair"):
 				pull_hair(area)
+				print("Hair pulled")
+				break
 			else:
 				#TODO pinchazo en culete
 				pass
 		tweezers.play("tweezers")
 		move_to(idle_position)
-
-
-#func _on_tweezers_end_area_entered(area):
-#	if area is Hair:
-#		print("pelo")
-#		pull_hair(area)
-#		tween.interpolate_property(self, "global_position",
-#		self.global_position, idle_position, 0.5,
-#		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-#		tween.start()
-#	else:
-#		print("carne")
-#		tween.interpolate_property(self, "global_position",
-#		self.global_position, idle_position, 0.5,
-#		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-#		tween.start()

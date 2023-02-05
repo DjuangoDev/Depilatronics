@@ -49,5 +49,6 @@ func see_to(position_):
 
 # extraction_quality = 1-3
 func i_have_pulled_you(extraction_tool,extraction_quality):
+	print("hair pulled")
 	emit_signal("hair_pulled",extraction_tool,pain,extraction_quality)
-	get_tree().free()
+	queue_free()

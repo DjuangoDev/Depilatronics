@@ -20,7 +20,7 @@ func _ready():
 				hair.pain=2
 			elif zone.is_in_group("MediumPain"):
 				hair.pain=1
-	pain_zone.free()
+	pain_zone.queue_free()
 
 #func _process(delta):
 	# $HUD/ProgressBar.get_
