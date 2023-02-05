@@ -43,7 +43,8 @@ func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zo
 		add_total_pain(pain_hair_base * extraction_perfection * hair_zone)
 	hair_number=hair_number-1
 	if hair_number<=0:
-		$HUD/AnimationPlayer.play("victory")
+
+		finished("VICTORY")
 
 func add_total_pain(pain):
 	total_pain += pain
@@ -82,8 +83,20 @@ func squinch(pain_):
 func _on_decrease_pain_timeout():
 	add_total_pain(-pain_reduction)
 
-func finished(reason):
-	pass
-
 func _on_Timer_timeout():
 	finished("NO_TIME")
+
+func finished(reason):
+	if reason=="NO_TIME":
+		$FinalNotice.visible=true
+		$FinalNotice/TimeOut.visible=true
+		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
+			
+	elif reason=="VICTORY":
+		$FinalNotice.visible=true
+		$FinalNotice/Victory.visible=true
+		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
+	elif reason=="PASSED_OUT":
+		$FinalNotice.visible=true
+		$FinalNotice/Passout.visible=true
+		#$FinalNotice/Passout.set_stats(pain,time,n_hairs,n_people)
