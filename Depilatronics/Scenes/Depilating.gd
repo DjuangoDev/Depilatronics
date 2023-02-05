@@ -41,8 +41,9 @@ func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zo
 		print(total_pain)
 	hair_number=hair_number-1
 	if hair_number<=0:
-		$HUD/AnimationPlayer.play("victory")
-
+		#$HUD/AnimationPlayer.play("victory")
+		finished("VICTORY")
+		
 func _on_hot_wax_pressed():
 	if selected_tool == "TWEEEZERS":
 		tweezers.disappear()
@@ -75,8 +76,20 @@ func _on_decrease_pain_timeout():
 	print("Segundos")
 	print(total_pain)
 
-func finished(reason):
-	pass
-
 func _on_Timer_timeout():
 	finished("NO_TIME")
+
+func finished(reason):
+	if reason=="NO_TIME":
+		$FinalNotice.visible=true
+		$FinalNotice/TimeOut.visible=true
+		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
+			
+	elif reason=="VICTORY":
+		$FinalNotice.visible=true
+		$FinalNotice/Victory.visible=true
+		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
+	elif reason=="PASSED_OUT":
+		$FinalNotice.visible=true
+		$FinalNotice/Passout.visible=true
+		#$FinalNotice/Passout.set_stats(pain,time,n_hairs,n_people)

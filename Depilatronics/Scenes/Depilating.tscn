@@ -1,13 +1,16 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Graphics/culo_1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Culo1.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Depilating.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Tweezers.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/HUD_elements/ImeOut.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/HUD_elements/PassOut.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Prefabs/Hair.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/FingerController.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/Hairy.gd" type="Script" id=10]
+[ext_resource path="res://Assets/HUD_elements/Victory.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -729,6 +732,31 @@ anims/squinch = SubResource( 3 )
 
 [node name="decrease_pain" type="Timer" parent="."]
 autostart = true
+
+[node name="FinalNotice" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TimeOut" parent="FinalNotice" instance=ExtResource( 6 )]
+visible = false
+margin_left = 380.0
+margin_top = 271.0
+margin_right = 380.0
+margin_bottom = 271.0
+
+[node name="Victory" parent="FinalNotice" instance=ExtResource( 11 )]
+visible = false
+margin_left = 375.0
+margin_top = 297.0
+margin_right = 375.0
+margin_bottom = 297.0
+
+[node name="Passout" parent="FinalNotice" instance=ExtResource( 7 )]
+visible = false
+margin_left = 378.0
+margin_top = 274.0
+margin_right = 378.0
+margin_bottom = 274.0
 
 [connection signal="mouse_entered" from="Culo1/Hairy/Hair2" to="Culo1/Hairy" method="_on_Hair2_mouse_entered"]
 [connection signal="in_skin_pinch" from="tweezers" to="." method="_on_tweezers_in_skin_pinch"]
