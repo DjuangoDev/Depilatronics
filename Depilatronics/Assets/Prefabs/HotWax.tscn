@@ -1,15 +1,28 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Graphics/mancha_cera_caliente.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Prefabs/HotWax.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Graphics/white.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 30.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 30.0
 
 [node name="HotWax" type="Node2D"]
 scale = Vector2( 2, 2 )
 script = ExtResource( 2 )
 
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 55.5, 2.5 )
+scale = Vector2( 1.17188, 1.39062 )
+texture = ExtResource( 3 )
+mode = 3
+range_height = -75.2
+
 [node name="HotWax" type="NinePatchRect" parent="."]
+modulate = Color( 1, 1, 1, 0.776471 )
 margin_left = -18.0
 margin_top = -32.0
 margin_right = 93.0
@@ -24,7 +37,14 @@ patch_margin_bottom = 40
 [node name="TipCol" type="Area2D" parent="HotWax"]
 
 [node name="TipCol" type="CollisionShape2D" parent="HotWax/TipCol"]
+position = Vector2( 18.5, 31.5 )
 shape = SubResource( 1 )
+
+[node name="RootCol" type="Area2D" parent="HotWax"]
+position = Vector2( 18, 32 )
+
+[node name="RootCol" type="CollisionShape2D" parent="HotWax/RootCol"]
+shape = SubResource( 2 )
 
 [node name="Tip" type="Position2D" parent="."]
 position = Vector2( 74, 2 )

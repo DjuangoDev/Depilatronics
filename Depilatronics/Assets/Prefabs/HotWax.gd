@@ -47,8 +47,7 @@ func _process(delta):
 			var longi=abs(mouse_position.distance_to(global_position))
 			if longi>extended:
 				$HotWax.rect_size.x=longi
-				$HotWax/TipCol.position.x=$HotWax.rect_size.x
-				$HotWax/TipCol.position.y=$HotWax.rect_size.y/2
+				$HotWax/TipCol.position.x=$HotWax.rect_size.x-35
 				extended=longi
 		
 func init_waxing(position_):
