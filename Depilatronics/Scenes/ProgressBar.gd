@@ -1,16 +1,18 @@
 extends Control
 
+onready var face := $face
+onready var progress := $TextureProgress
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	face.animation = "level1"
 
+func _process(delta):
+	if progress.value > 80:
+		face.animation = "level3"
+	elif progress.value > 50:
+		face.animation = "level2"
+	else:
+		face.animation = "level1"
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func add_pain(pain):
+	progress.value = progress.value + pain
