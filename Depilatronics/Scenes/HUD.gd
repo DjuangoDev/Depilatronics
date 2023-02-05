@@ -16,12 +16,6 @@ func _process(delta):
 	if not int(timer.time_left) == int(timer_label.text):
 		timer_label.text = str(int(timer.time_left))
 
-func _input(event):
-	if event.is_action_pressed("ui_right"):
-		progress.add_pain(10)
-	if event.is_action_pressed("ui_left"):
-		progress.add_pain(-10)
-
 func set_pain(value):
 	progress.set_pain(value)
 

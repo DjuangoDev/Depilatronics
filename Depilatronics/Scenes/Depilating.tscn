@@ -760,6 +760,7 @@ anims/squinch = SubResource( 3 )
 autostart = true
 
 [node name="FinalNotice" type="Control" parent="."]
+pause_mode = 2
 margin_right = 40.0
 margin_bottom = 40.0
 
