@@ -676,10 +676,14 @@ margin_left = 1240.0
 margin_right = 1240.0
 margin_bottom = 678.0
 
+[node name="decrease_pain" type="Timer" parent="."]
+autostart = true
+
 [connection signal="mouse_entered" from="Culo1/Hairy/Hair2" to="Culo1/Hairy" method="_on_Hair2_mouse_entered"]
 [connection signal="pressed" from="HUD/Buttons/tweezers/TextureButton" to="." method="_on_tweezers_pressed"]
 [connection signal="pressed" from="HUD/Buttons/hot_wax/TextureButton" to="." method="_on_hot_wax_pressed"]
 [connection signal="pressed" from="HUD/Buttons/pull/TextureButton" to="." method="_on_pull_pressed"]
+[connection signal="timeout" from="decrease_pain" to="." method="_on_decrease_pain_timeout"]
 
 [editable path="tweezers"]
 [editable path="HUD"]

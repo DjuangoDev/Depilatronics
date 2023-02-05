@@ -6,8 +6,14 @@ var total_pain=0
 var selected_tool = "FINGER"
 onready var tweezers := $tweezers
 onready var pain_zone := $PainZones
+onready var hud := $HUD
+
+var pain_reduction = 1
+var pain_hair_base = 3
+var minimum_pain = 35
 
 func _ready():
+	total_pain = minimum_pain
 	for hair in $Culo1/Hairy.get_children():
 		hair_number=hair_number+1
 		hair.connect("hair_pulled",self,"another_hair_bites_the_dust")
@@ -29,9 +35,12 @@ func _unhandled_input(event):
 	   tweezers.use_tweezers(event.get_position())
 	
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
-	
+	if extraction_tool == "TWEEZERS":
+		total_pain += pain_hair_base * extraction_perfection * hair_zone
+		hud.set_pain(total_pain)
+		print(total_pain)
 	hair_number=hair_number-1
-	if hair_number<0:
+	if hair_number<=0:
 		$HUD/AnimationPlayer.play("victory")
 
 func _on_hot_wax_pressed():
@@ -49,3 +58,12 @@ func _on_pull_pressed():
 	if selected_tool == "TWEEEZERS":
 		tweezers.disappear()
 	selected_tool = "PULL"
+
+
+func _on_decrease_pain_timeout():
+	total_pain -= pain_reduction
+	if total_pain < minimum_pain:
+		total_pain = minimum_pain
+	hud.set_pain(total_pain)
+	print("Segundos")
+	print(total_pain)

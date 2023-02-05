@@ -57,14 +57,11 @@ func _on_Area2D_body_entered(body):
 
 
 func _on_tweezers_animation_finished(anim_name):
-	print("animacion")
 	if anim_name == "tweezers_closed":
-		print("End tweezers closed")
 		var areas = tweezers_end.get_overlapping_areas()
 		for area in areas:
 			if area.is_in_group("hair"):
 				pull_hair(area)
-				print("Hair pulled")
 				break
 			else:
 				#TODO pinchazo en culete
