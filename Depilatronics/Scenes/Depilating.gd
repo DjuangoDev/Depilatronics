@@ -14,11 +14,13 @@ var pain_hair_base = 3
 var pain_ass_pinch = 15
 var minimum_pain = 35
 var maximum_pain = 100
+var maximum_inflicted_pain = 40
 
 func _ready():
 	total_pain = minimum_pain
+	var counter = 5
 	for hair in $Culo1/Hairy.get_children():
-		hair_number=hair_number+1
+		hair_number += 1
 		hair.connect("hair_pulled",self,"another_hair_bites_the_dust")
 		
 		var zones=hair.get_overlapping_areas()
@@ -43,7 +45,6 @@ func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zo
 		add_total_pain(pain_hair_base * extraction_perfection * hair_zone)
 	hair_number=hair_number-1
 	if hair_number<=0:
-
 		finished("VICTORY")
 
 func add_total_pain(pain):
@@ -52,6 +53,10 @@ func add_total_pain(pain):
 		total_pain = minimum_pain
 	elif total_pain >= maximum_pain:
 		total_pain = maximum_pain
+		maximum_inflicted_pain = total_pain
+		finished("PASSED_OUT")
+	if total_pain > maximum_inflicted_pain:
+		maximum_inflicted_pain = total_pain
 	hud.set_pain(total_pain)
 	
 
@@ -90,13 +95,13 @@ func finished(reason):
 	if reason=="NO_TIME":
 		$FinalNotice.visible=true
 		$FinalNotice/TimeOut.visible=true
-		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
-			
+		$FinalNotice/Victory.set_stats(maximum_inflicted_pain,str($HUD/Timer.time_left),hair_number,1)
 	elif reason=="VICTORY":
 		$FinalNotice.visible=true
 		$FinalNotice/Victory.visible=true
-		#$FinalNotice/Victory.set_stats(pain,time,n_hairs,n_people)
+		$FinalNotice/Victory.set_stats(maximum_inflicted_pain,str($HUD/Timer.time_left),hair_number,1)
 	elif reason=="PASSED_OUT":
 		$FinalNotice.visible=true
 		$FinalNotice/Passout.visible=true
-		#$FinalNotice/Passout.set_stats(pain,time,n_hairs,n_people)
+		$FinalNotice/Passout.set_stats(maximum_inflicted_pain,str($HUD/Timer.time_left),hair_number,1)
+	get_tree().paused = true
