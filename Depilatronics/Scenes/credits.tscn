@@ -249,21 +249,23 @@ custom_fonts/font = SubResource( 3 )
 text = "Programador"
 
 [node name="creditMenu" type="HBoxContainer" parent="."]
-margin_left = 512.0
-margin_top = 616.0
-margin_right = 869.0
-margin_bottom = 699.0
+margin_left = 35.0
+margin_top = 369.0
+margin_right = 135.0
+margin_bottom = 452.0
+rect_scale = Vector2( 2, 2 )
 
 [node name="btnVolver" parent="creditMenu" instance=ExtResource( 6 )]
 anchor_right = 0.0
-margin_left = 136.0
-margin_right = 220.0
+margin_left = 8.0
+margin_right = 92.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
 
 [node name="button" parent="creditMenu/btnVolver" index="0"]
 margin_left = 0.0
 margin_right = 84.0
+rect_scale = Vector2( 1, 1 )
 
 [connection signal="pressed" from="creditMenu/btnVolver/button" to="." method="_on_volver_button_pressed"]
 

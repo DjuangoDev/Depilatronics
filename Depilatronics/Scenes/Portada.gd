@@ -17,12 +17,10 @@ func _ready():
 
 
 func _on_inicio_button_pressed():
-	pass # Replace with function body.
-
+	get_tree().change_scene("res://Scenes/Depilating.tscn")
 
 func _on_salir_button_pressed():
 	get_tree().quit()
-	
 
 func _on_creditos_button_pressed():
 	get_tree().change_scene("res://Scenes/credits.tscn")
