@@ -12,6 +12,7 @@ margin_bottom = 83.0
 margin_left = 598.0
 margin_right = 682.0
 margin_bottom = 83.0
+rect_scale = Vector2( 2, 2 )
 size_flags_horizontal = 6
 size_flags_vertical = 6
 texture_normal = ExtResource( 2 )

@@ -4,7 +4,8 @@ extends Node2D
 var hair_number=0
 var total_pain=0
 var selected_tool = "FINGER"
-
+onready var tweezers := $tweezers
+onready var pain_zone := $PainZones
 
 func _ready():
 	for hair in $Culo1/Hairy.get_children():
@@ -19,17 +20,14 @@ func _ready():
 				hair.pain=2
 			elif zone.is_in_group("MediumPain"):
 				hair.pain=1
-		
-	print(hair_number)
+	pain_zone.free()
 
-func _process(delta):
+#func _process(delta):
 	# $HUD/ProgressBar.get_
-	pass
-
-# pulled hair Signals call this callback(): 
-# extraction_perfection: 1-3
-# hair_zone: 1-3
-#	
+func _unhandled_input(event):
+   if event is InputEventMouseButton and selected_tool == "TWEEEZERS":
+	   tweezers.use_tweezers(event.get_position())
+	
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
 	
 	hair_number=hair_number-1
@@ -37,15 +35,17 @@ func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zo
 		$HUD/AnimationPlayer.play("victory")
 
 func _on_hot_wax_pressed():
+	if selected_tool == "TWEEEZERS":
+		tweezers.disappear()
 	selected_tool = "HOT_WAX"
-	print(selected_tool)
 
 
 func _on_tweezers_pressed():
 	selected_tool = "TWEEEZERS"
-	print(selected_tool)
+	tweezers.appear()
 
 
 func _on_pull_pressed():
+	if selected_tool == "TWEEEZERS":
+		tweezers.disappear()
 	selected_tool = "PULL"
-	print(selected_tool)
