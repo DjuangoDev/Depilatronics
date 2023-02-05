@@ -52,8 +52,8 @@ func _unhandled_input(event):
 				band.stop_spreading(mouse_position)
 				band=null
 		elif selected_tool == "PULL":
-			band.start_pulling(mouse_position)
-			
+			#band.start_pulling(mouse_position)
+			pass
 			
 func another_hair_bites_the_dust(extraction_tool, extraction_perfection, hair_zone):
 	if extraction_tool == "TWEEZERS":
