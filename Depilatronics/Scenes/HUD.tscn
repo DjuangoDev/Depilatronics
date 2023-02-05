@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Buttons.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/ProgressBar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/HUD.gd" type="Script" id=3]
-[ext_resource path="res://Assets/Graphics/boton_cera.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Graphics/boton_mano.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Graphics/boton_pinzas.png" type="Texture" id=6]
 
@@ -38,55 +37,18 @@ margin_top = 0.0
 margin_right = 1276.0
 margin_bottom = 720.0
 
-[node name="hot_wax" parent="Buttons" index="0"]
-margin_right = 128.0
-margin_bottom = 128.0
-
-[node name="TextureButton" parent="Buttons/hot_wax" index="0"]
-margin_right = 128.0
-margin_bottom = 128.0
-texture_normal = ExtResource( 4 )
-texture_pressed = null
-texture_focused = null
-
-[node name="MarginContainer2" parent="Buttons" index="1"]
-margin_top = 132.0
-margin_right = 128.0
-margin_bottom = 132.0
-
-[node name="tweezers" parent="Buttons" index="2"]
-margin_top = 136.0
-margin_right = 128.0
-margin_bottom = 264.0
-
 [node name="TextureButton" parent="Buttons/tweezers" index="0"]
-margin_right = 128.0
-margin_bottom = 128.0
 texture_normal = ExtResource( 6 )
-texture_pressed = null
-texture_focused = null
-
-[node name="MarginContainer" parent="Buttons" index="3"]
-margin_top = 268.0
-margin_right = 128.0
-margin_bottom = 268.0
-
-[node name="pull" parent="Buttons" index="4"]
-margin_top = 272.0
-margin_right = 128.0
-margin_bottom = 400.0
 
 [node name="TextureButton" parent="Buttons/pull" index="0"]
-margin_right = 128.0
-margin_bottom = 128.0
 texture_normal = ExtResource( 5 )
-texture_pressed = null
-texture_focused = null
 
 [node name="MarginContainer3" type="MarginContainer" parent="."]
 margin_left = 1280.0
 margin_right = 1280.0
 margin_bottom = 720.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [connection signal="pressed" from="Buttons/hot_wax/TextureButton" to="." method="_on_hot_wax_pressed"]
 [connection signal="pressed" from="Buttons/tweezers/TextureButton" to="." method="_on_tweezers_pressed"]

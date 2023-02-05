@@ -12,32 +12,32 @@ size_flags_vertical = 3
 [node name="hot_wax" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 84.0
-margin_bottom = 83.0
+margin_right = 128.0
+margin_bottom = 128.0
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
-margin_top = 87.0
-margin_right = 84.0
-margin_bottom = 87.0
+margin_top = 132.0
+margin_right = 128.0
+margin_bottom = 132.0
 
 [node name="tweezers" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 91.0
-margin_right = 84.0
-margin_bottom = 174.0
+margin_top = 136.0
+margin_right = 128.0
+margin_bottom = 264.0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-margin_top = 178.0
-margin_right = 84.0
-margin_bottom = 178.0
+margin_top = 268.0
+margin_right = 128.0
+margin_bottom = 268.0
 
 [node name="pull" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 182.0
-margin_right = 84.0
-margin_bottom = 265.0
+margin_top = 272.0
+margin_right = 128.0
+margin_bottom = 400.0
 
 [editable path="hot_wax"]
 [editable path="tweezers"]

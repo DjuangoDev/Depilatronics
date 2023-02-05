@@ -29,6 +29,9 @@ func _on_pull_pressed():
 
 func disable_all():
 	hot_wax.but.pressed = false
+	hot_wax.play_idle()
 	tweezers.but.pressed = false
+	tweezers.play_idle()
 	pull.but.pressed = false
+	pull.play_idle()
 	
